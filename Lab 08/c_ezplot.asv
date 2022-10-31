@@ -1,0 +1,7 @@
+f = inpt;
+ezplot(f, [-5, 0]);
+hold on
+grid on
+
+[xopt, fmin] = fminunc (f, 0)
+plot(xopt, fmin, 'rx');

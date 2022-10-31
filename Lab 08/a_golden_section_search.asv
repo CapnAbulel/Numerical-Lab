@@ -1,0 +1,22 @@
+f = input('Enter function to optimize');
+x_l = input('Initial lower limit');
+x_u = input('Initial upper_limit');
+e_tol = input('Margin of error');
+iterations = 100;
+G = .5 * (sqrt(5) - 1);
+error = inf;
+i = 0;
+while(error > e_tol && i < iterations)
+    d = G * (x_r - x_l);
+    x_1 = x_l + d;
+    x_2 = x_u - d;
+    f_1 = f(x_1);
+    f_2 = f(x_2);
+    error = abs((x_u - x_l) / ((x_u + x_l) / 2));
+    if (f1 >= f2)
+        x_u = x_1;
+    end
+    if (f2 >= f1)
+        x_l = x_2;
+        
+    

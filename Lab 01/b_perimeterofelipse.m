@@ -1,0 +1,22 @@
+a = input('Enter the value of A: ');
+b = input('Enter the value of B: ');
+sum = a + b;
+dif = a - b;
+h = (dif / sum) ^ 2;
+p_1  = PI * sum;
+p_2 = pi * sqrt( 2 * ( a ^ 2 + b ^ 2));
+p_3 = pi * sqrt( 2 * ( a ^ 2 + b ^ 2) - dif ^ 2 / 2);
+p_4 = pi * sum * ( 1 + h / 8) ^ 2;
+p_5 = pi * sum * ( 1 + ((3 * h) / ( 10 + sqrt(4 - 3 * h))));
+p_6 = pi * sum * (64 - 3 * h ^ 2) / (64 - 16 * h ^ 2);
+p_7 = pi * sum * (256 - 48 * h - 21 * h ^ 2) / (256 - 112 * h + 3 * h^ 2);
+p_8 = pi * sum * (3 - sqrt(1 - h)) / 2;
+
+fprintf('p1 = %10.4f\n', p_1);
+fprintf('p2 = %10.4f\n', p_2);
+fprintf('p3 = %10.4f\n', p_3);
+fprintf('p4 = %10.4f\n', p_4);
+fprintf('p5 = %10.4f\n', p_5);
+fprintf('p6 = %10.4f\n', p_6);
+fprintf('p7 = %10.4f\n', p_7);
+fprintf('p8 = %10.4f\n', p_8);
